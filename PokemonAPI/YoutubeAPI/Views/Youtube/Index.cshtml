@@ -1,0 +1,17 @@
+﻿@model YoutubeAPI.Models.YouTubeSearch
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@*@foreach (var item in Model.items)
+    {
+        <img src="@item.snippet.thumbnails.high.url" />
+        <p>@item.snippet.title</p>
+    }*@
+<h1>@Model.items</h1>
+<h1>@Model.etag</h1>
+<h1>@Model.kind</h1>
+<h1>@Model.pageInfo</h1>
+<h1>@Model.regionCode</h1>

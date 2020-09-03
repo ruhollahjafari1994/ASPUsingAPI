@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokemonAPI", "PokemonAPI\Po
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giphy", "Giphy\Giphy.csproj", "{93583A09-FF84-4A4D-B934-B1146259E3F2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeAPI", "YoutubeAPI\YoutubeAPI.csproj", "{0589389F-363B-4911-97C1-40DE2AD02887}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{93583A09-FF84-4A4D-B934-B1146259E3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93583A09-FF84-4A4D-B934-B1146259E3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93583A09-FF84-4A4D-B934-B1146259E3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0589389F-363B-4911-97C1-40DE2AD02887}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0589389F-363B-4911-97C1-40DE2AD02887}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0589389F-363B-4911-97C1-40DE2AD02887}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0589389F-363B-4911-97C1-40DE2AD02887}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

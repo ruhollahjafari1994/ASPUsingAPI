@@ -1,21 +1,20 @@
-﻿using PokemonAPI;
-using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json.Linq;
 using System.IO;
 using System.Net;
 using System.Web.Mvc;
-using Giphy.Models;
 using System.Diagnostics;
+using YoutubeAPI.Models;
 
-namespace PokemonAPI.Controllers
+namespace YoutubeAPI
 {
-    public class GiphyController : Controller
+    public class YoutubeController : Controller
     {
         // GET: Giphy
         public ActionResult Index()
         {
             //create request to the api
-            string apikey = System.Web.Configuration.WebConfigurationManager.AppSettings["giphyAPIKeys"];
-            WebRequest request = WebRequest.Create("https://api.giphy.com/v1/gifs/search?q=funny+cat&api_key="+apikey);
+            string apikey = "AIzaSyBqSlrPVyq43u8Vo0vi4GJG8k9dvPzS-Gg";
+            WebRequest request = WebRequest.Create("https://www.googleapis.com/youtube/v3/search?part=snippet&q=pokemon&key="+apikey);
 
             //send the request off
             WebResponse response = request.GetResponse();
@@ -26,9 +25,8 @@ namespace PokemonAPI.Controllers
             //put into string which is json formatted
             string responseFromServer = reader.ReadToEnd();
             JObject parsedString = JObject.Parse(responseFromServer);
-            Root rootGiph = parsedString.ToObject<Root>();
-
-            return View(rootGiph);
+            YouTubeSearch search = parsedString.ToObject<YouTubeSearch>();
+            return View();
 
         }
     }
